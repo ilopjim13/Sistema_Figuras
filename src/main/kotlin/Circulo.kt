@@ -1,9 +1,9 @@
-class Circulo(color:String) :Figura(color) {
-    override fun area() {
-        TODO("Not yet implemented")
+class Circulo(color:String, val radio: Double) :Figura(color) {
+    override fun area() :Double {
+        return Math.PI * (this.radio*this.radio)
     }
 
-    override fun perimtro() {
-        TODO("Not yet implemented")
+    override fun perimetro() :Double {
+        return 2 * Math.PI * this.radio
     }
 }

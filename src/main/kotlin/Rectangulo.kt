@@ -1,10 +1,10 @@
-class Rectangulo(color:String) :Figura(color) {
-    override fun area() {
-        TODO("Not yet implemented")
+class Rectangulo(color:String, var base:Double, var altura :Double) :Figura(color) {
+    override fun area() :Double {
+        return this.base * this.altura
     }
 
-    override fun perimtro() {
-        TODO("Not yet implemented")
+    override fun perimetro() :Double {
+        return (this.base*this.base) + (this.altura*this.altura)
     }
 
 }
